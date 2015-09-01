@@ -1,0 +1,9 @@
+Calcule la complejidad de tiempo para la implementación HashSet, para el mismo cálculo de SI o NO el conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web. Indique como llegó a ese resultado.
+
+La complejidad para el cálculo de SI o NO el conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web es O(n), porque se recorren todos los elementos que hay y se revisan a qué grupos pertenecen. Para este cálculo se realizaron los siguientes pasos:
+1.	Se recorren todos los usuarios y sus características (Si pertenecen o no a los 3 grupos de desarrolladores)
+2.	Cuando se recorre un usuario, en dos contadores (contjava, contweb) se va sumando un 1 si pertenecen a Java o Web.
+3.	Si el usuario pertenece a Java y Web a la vez, se suma un 1 a otro contador (subjavaweb).
+4.	Se compara si el contador subjavaweb tiene la misma cantidad que contjava, con esto nos aseguramos que todos los usuarios pertenecientes a Java también pertenecen a Web.
+5.	Se compara si el contador contweb es mayor o igual a contjava, esto sirve para asegurar que el grupo Web tiene como subconjunto a Java y además otros usuarios por aparte pertenecen a él.
+6.	Si se cumplen 4 y 5, es porque Java sí es un subconjunto de Web, sino no lo es.
