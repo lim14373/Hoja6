@@ -16,13 +16,13 @@ import java.util.LinkedHashSet;
 
 class NameFactory {
 //regresa la implementacion de la clase
-   	public  AbstractSet getClase(int entry) {
+   	public  AbstractSet getClase(String entry) {
    		AbstractSet implementacion = null;
-   		if (entry==1)
+   		if (entry.equals("1"))
       		implementacion= new HashSet<desarrollador>();
-   		if (entry==2)
+   		if (entry.equals("2"))
       		implementacion= new TreeSet<desarrollador>(new Comparador()); //para crear un orden especifico se utiliza el comparador
-      	if (entry==3)
+      	if (entry.equals("3"))
       		implementacion= new LinkedHashSet<desarrollador>();
       	return implementacion;
    }
